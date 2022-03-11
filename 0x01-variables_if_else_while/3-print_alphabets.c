@@ -7,13 +7,20 @@
 */
 int main(void)
 {
-	for (int i = 97; i < 123; i++)
+	int i = 97;
+
+	while (i < 123)
 	{
 		printf("%c", i);
+		i++;
 	}
-	for (int j = 65; j < 90; j++)
+
+	int j = 65;
+
+	while (j < 91)
 	{
 		printf("%c", j);
+		j++;
 	}
 	printf("\n");
 }

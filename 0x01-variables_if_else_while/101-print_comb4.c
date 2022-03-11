@@ -7,11 +7,17 @@
  */
 int main(void)
 {
-	for (int i = '0'; i <= '9'; i++)
+	int i = '0';
+
+	while (i <= '9')
 	{
-		for (int j = '0'; j <= '9'; j++)
+		int j = '0';
+
+		while (j <= '9')
 		{
-			for (int k = '0'; k <= '9'; k++)
+			int k = '0';
+
+			while (k <= '9')
 			{
 				if (i < j && j < k)
 				{
@@ -23,8 +29,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				k++;
 			}
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 }

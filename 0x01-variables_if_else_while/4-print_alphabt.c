@@ -7,10 +7,13 @@
 */
 int main(void)
 {
-	for (int i = 97; i < 123; i++)
+	int i = 97;
+
+	while (i < 123)
 	{
 		if (i != 113 && i != 101)
 			printf("%c", i);
+		i++;
 	}
 	printf("\n");
 }
