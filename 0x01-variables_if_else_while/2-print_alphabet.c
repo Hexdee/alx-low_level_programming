@@ -2,7 +2,7 @@
 /**
 *main - entry point, print the alphabets
 *with only two putchar()s
-*
+*:
 * Return: Always 0 (Success)
 */
 int main(void)
@@ -15,4 +15,5 @@ int main(void)
 		i++;
 	}
 	printf("\n");
+	return (0);
 }
