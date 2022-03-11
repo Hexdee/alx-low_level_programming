@@ -9,8 +9,8 @@ int main(void)
 {
 	for (int i = 122; i > 96; i--)
 	{
-		printf("%c", i);
+		putchar(i);
 	}
-	printf("\n");
+	putchar('\n';
 	return (0);
 }
