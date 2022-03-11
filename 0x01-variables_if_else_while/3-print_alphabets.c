@@ -8,14 +8,13 @@
 int main(void)
 {
 	int i = 97;
+	int j = 65;
 
 	while (i < 123)
 	{
 		printf("%c", i);
 		i++;
 	}
-
-	int j = 65;
 
 	while (j < 91)
 	{
