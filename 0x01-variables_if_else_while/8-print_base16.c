@@ -19,7 +19,7 @@ int main(void)
 
 	while (j < 103)
 	{
-		putchar(i);
+		putchar(j);
 		j++;
 	}
 	putchar('\n');
