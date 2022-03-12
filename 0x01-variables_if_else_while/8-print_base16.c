@@ -8,13 +8,14 @@
 int main(void)
 {
 	int i = '0';
+	int j;
 
 	while (i <= '9')
 	{
 		putchar(i);
 		i++;
 	}
-	int j = 97;
+	j = 97;
 
 	while (j < 103)
 	{
