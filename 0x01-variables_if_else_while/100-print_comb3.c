@@ -8,11 +8,11 @@
 int main(void)
 {
 	int i = '0';
+	int j;
 
 	while (i <= '9')
 	{
-		int j = '0';
-
+		j = '0';
 		while (j <= '9')
 		{
 			if (i < j)
@@ -29,4 +29,5 @@ int main(void)
 		i++;
 	}
 	putchar('\n');
+	return (0);
 }
