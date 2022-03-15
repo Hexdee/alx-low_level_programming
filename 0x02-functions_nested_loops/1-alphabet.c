@@ -1,6 +1,6 @@
 #include "main.h"
-/*
- * print_alphabet - A function that prints the alphabets
+/**
+ * print_alphabet - A function that prints the alphabet
  *
  * Description: Funtion that prints the alphabets and a newline
 */

@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 /**
  * main - entry point
  * Descriptipn: a program that prints _putchar,
