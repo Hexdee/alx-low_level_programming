@@ -14,7 +14,7 @@ int main(void)
 
 	prev2 = 0;
 	prev1 = 1;
-	for (int i = 0; i < 98; i++)
+	for (i = 0; i < 98; i++)
 	{
 		nextNum = prev1 + prev2;
 		if (i == 97)
@@ -25,4 +25,5 @@ int main(void)
 		prev1 = nextNum;
 	}
 	printf("\n");
+	return (0);
 }
