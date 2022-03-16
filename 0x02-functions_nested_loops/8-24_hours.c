@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * jack_bauer - a function that prints every minutes of the day
 */
