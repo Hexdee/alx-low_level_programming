@@ -2,7 +2,7 @@
 /**
  * _abs  - A function that returns absolute value.
  *@n: number ti return its absolute value
- * Return: abosolute value of n
+ * Return: absolute value of n
 */
 int _abs(int n)
 {
