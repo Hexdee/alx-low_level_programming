@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * islower  - A function that checks for lowercase character.
- *@c: the character to be checked
- * Return: 1 if c is lower, 0 otherwise
+ * _abs  - A function that returns absolute value.
+ *@n: number ti return its absolute value
+ * Return: abosolute value of n
 */
 int _abs(int n)
 {
