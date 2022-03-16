@@ -9,7 +9,6 @@
  */
 int main(void)
 {
-	int i;
 	long int prev1, prev2, nextNum,  sum;
 
 	prev1 = 0;
