@@ -13,5 +13,5 @@ void print_to_98(int n)
 		else
 			n--;
 	}
-	printf("%dvim\n", 98);
+	printf("%d\n", 98);
 }
