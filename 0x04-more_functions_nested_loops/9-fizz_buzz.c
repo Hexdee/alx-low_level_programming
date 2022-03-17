@@ -21,4 +21,5 @@ int  main(void)
 			printf("%d ", i);
 	}
 	printf("\b\n");
+	return (0);
 }
