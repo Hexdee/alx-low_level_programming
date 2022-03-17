@@ -1,4 +1,4 @@
-#include <studio.h>
+#include "main.h"
 
 /**
  * print_line - A function that draws a
@@ -10,7 +10,8 @@ void print_line(int n)
 {
 	while (n > 0)
 	{
-		putchar('_');
+		_putchar('_');
 		n--;
 	}
+	_putchar('\n');
 }
