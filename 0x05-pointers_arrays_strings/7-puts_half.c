@@ -14,7 +14,7 @@ void puts_half(char *str)
 	{
 	}
 	j = i / 2;
-	for (j--; j < i; j++)
+	for (; j < i; j++)
 	{
 		_putchar(str[j]);
 	}
