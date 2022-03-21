@@ -9,7 +9,8 @@
 void _puts(char *str)
 {
 	int i;
-	while(str[i] != '\n')
+
+	while (str[i] != '\n')
 	{
 		_putchar(str[i]);
 		i++;
