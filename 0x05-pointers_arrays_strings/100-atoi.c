@@ -1,7 +1,5 @@
 #include "main.h"
 
-int contains_number(char *s);
-
 /**
  * _atoi - a function that convert a
  * string to an integer.
