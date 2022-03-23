@@ -1,23 +1,18 @@
 /**
- * _strncpy - 
+ * _strncpy - function that copies a string.
  * @dest: string 1
  * @src: string 2
- * @n: amou
+ * @n: amount
  * Return: pointer to dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j;
+	int i;
 
-	for (i = 0; dest[i] != '\0'; i++)
-	{
-	}
-	for (j = 0; src[j] != '\0' && j < n; j++)
-	{
-		dest[i] = src[j];
-		i++;
-	}
-	dest[i + 1] = '\0';
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	if (i < n)
+		dest[i] = '\0';
 	return (dest);
 }
