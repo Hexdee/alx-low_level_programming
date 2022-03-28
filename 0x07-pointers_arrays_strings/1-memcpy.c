@@ -3,6 +3,8 @@
  * @dest: destination
  * @src: source
  * @n: number of byte to copy
+ *
+ * Return: Address of dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
