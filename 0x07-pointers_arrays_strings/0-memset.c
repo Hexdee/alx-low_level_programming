@@ -3,6 +3,8 @@
  * @s: Adress of memory to be filled
  * @b: The constant byte
  * @n: Number of byte o fill
+ *
+ * Return: address of s
  */
 
 char *_memset(char *s, char b, unsigned int n)
