@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev_recursion you - a function that
+ * _print_rev_recursion - a function that
  * prints a string in reverse.
  * @s: string to be printed in reverse
  */
