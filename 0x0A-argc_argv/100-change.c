@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	num = atoi(argv[1]);
-	while(num > 0)
+	while (num > 0)
 	{
 		for (i = 0; i < 5; i++)
 		{
