@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _stdrup - a function that returns a pointer to a newly allocated
+ * _strdup - a function that returns a pointer to a newly allocated
  * space in memory, which contains a copy of the string given as a parameter.
  * @str: the string to be duplicated
  *
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	len = strlen(str);
-	s = malloc(len);
+	s = malloc(len + 1);
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; i <= len; i++)
