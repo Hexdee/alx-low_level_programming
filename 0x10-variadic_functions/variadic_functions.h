@@ -8,10 +8,10 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 void print_all(const char * const format, ...);
 
-void print_char(va_list *);
-void print_int(va_list *);
-void print_float(va_list *);
-void print_string(va_list *);
+void print_char(va_list);
+void print_int(va_list);
+void print_float(va_list);
+void print_string(va_list);
 
 /**
  * struct fp - function for control characters
@@ -22,7 +22,7 @@ void print_string(va_list *);
 typedef struct fp
 {
 	char c;
-	void (*p)(va_list *);
+	void (*p)(va_list);
 } fp;
 
 #endif

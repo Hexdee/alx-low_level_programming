@@ -74,10 +74,11 @@ void print_float(va_list p)
  */
 void print_string(va_list p)
 {
+	char *s = va_arg(p, char *);
 	if (!s)
 	{
-		printf("%s", "(nill)";
+		printf("%s", "(nill)");
 		return;
 	}
-	printf("%s", va_arg(p, char *));
+	printf("%s", s);
 }
