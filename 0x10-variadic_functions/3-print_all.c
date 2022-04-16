@@ -15,7 +15,6 @@ void print_all(const char * const format, ...)
 		{'f', print_float},
 		{'s', print_string}
 	};
-	void (*print_next)(va_list *);
 	va_list args;
 	int i = 0, j = 0;
 	char *sp = "";
@@ -30,8 +29,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == fmt[j].c)
 			{
 				printf("%s", sp);
-				print_next = fmt[j].p;
-				print_next(&args);
+				fmt[j].p(&args);
 				sp = ", ";
 				break;
 			}
