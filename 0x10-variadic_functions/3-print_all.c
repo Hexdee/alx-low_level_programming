@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
-void print_char(va_list *);
-void print_int(va_list *);
-void print_float(va_list *);
-void print_string(va_list *);
-
 /**
  * print_all - prints anything
  * @format: list of all types of arguments
@@ -26,7 +21,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (j < 4)
