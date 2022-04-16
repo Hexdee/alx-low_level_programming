@@ -22,7 +22,8 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	if (get_op_func(argv[2]) == NULL)
+	op = get_op_func(argv[2]);
+	if (argv[2][1] != '\0' || op == NULL)
 	{
 		puts("Error");
 		exit(99);
@@ -34,7 +35,6 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	op = get_op_func(argv[2]);
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 

@@ -114,7 +114,7 @@ int op_mod(int a, int b);
 ```
 `3-get_op_func.c`
 
-This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
+This file should contain the function that selects the correct function to perform the operation asked by the user. You're not allowed to declare any other function.
 
 Prototype: 
 ```C
@@ -156,5 +156,5 @@ You are allowed to use a maximum of 3 if statements
 
 ### Run this command
 ```bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc && ./calc
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc && ./calc 10 + 5
 ```
