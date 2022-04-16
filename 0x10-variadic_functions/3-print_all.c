@@ -29,7 +29,8 @@ void print_all(const char * const format, ...)
 			if (format[i] == fmt[j].c)
 			{
 				printf("%s", sp);
-				fmt[j].p(&args);
+				print_next = fmt[j].p;
+				print_next(&args);
 				sp = ", ";
 				break;
 			}
