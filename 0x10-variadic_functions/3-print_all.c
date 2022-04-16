@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == fmt[j].c)
 			{
 				printf("%s", sp);
-				fmt[j].p(&args);
+				fmt[j].p(args);
 				sp = ", ";
 				break;
 			}
@@ -43,46 +43,41 @@ void print_all(const char * const format, ...)
 
 /**
  * print_char - prints a character
- * @p: pointer to v_list
+ * @p: v_list
  */
-void print_char(va_list *p)
+void print_char(va_list p)
 {
-	char c = va_arg(*p, int);
-
-	printf("%c", c);
+	printf("%c", va_arg(p, int));
 }
 
 /**
  * print_int - prints int
- * @p: pointer to v_list
+ * @p: v_list
  */
-void print_int(va_list *p)
+void print_int(va_list p)
 {
-	int i = va_arg(*p, int);
-
-	printf("%i", i);
+	printf("%i", va_arg(p, int));
 }
 
 /**
  * print_float - prints float
- * @p: pointer to v_list
+ * @p: v_list
  */
-void print_float(va_list *p)
+void print_float(va_list p)
 {
-	float f = va_arg(*p, double);
-
-	printf("%f", f);
+	printf("%f", va_arg(p, double));
 }
 
 /**
  * print_string - prints string
- * @p: pointer to v_list
+ * @p: v_list
  */
-void print_string(va_list *p)
+void print_string(va_list p)
 {
-	char *s = va_arg(*p, char *);
-
-	if (s == NULL)
-		s = "(nill)";
-	printf("%s", s);
+	if (!s)
+	{
+		printf("%s", "(nill)";
+		return;
+	}
+	printf("%s", va_arg(p, char *));
 }
