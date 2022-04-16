@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
+	printf("%s", format ? "\n" : "");
 	va_end(args);
 }
 
