@@ -28,10 +28,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == fmt[j].c)
 			{
-				if (i > 0)
-					printf(", ");
+				printf("%s", sp);
 				print_next = fmt[j].p;
 				print_next(&args);
+				sp = ", ";
 				break;
 			}
 			j++;
