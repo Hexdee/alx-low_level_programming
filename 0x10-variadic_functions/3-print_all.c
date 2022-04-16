@@ -82,6 +82,8 @@ void print_float(va_list *p)
 void print_string(va_list *p)
 {
 	char *s = va_arg(*p, char *);
-
-	printf("%s", s ? s : "(nil)");
+	if (s)
+		printf("%s", s);
+	else 
+		printf("(nill)");
 }
