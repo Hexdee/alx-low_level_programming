@@ -1,0 +1,20 @@
+#!/bin/bash
+cd 0x02-functions_nested_loops
+
+cp _putchar.c 3-islower.c 4-isalpha.c 6-abs.c ../0x18-dynamic_libraries
+
+cd ../0x04-more_functions_nested_loops
+
+cp 0-isupper.c 1-isdigit.c ../0x18-dynamic_libraries
+
+cd ../0x05-pointers_arrays_strings
+
+cp 2-strlen.c 3-puts.c 9-strcpy.c 100-atoi.c ../0x18-dynamic_libraries
+
+cd ../0x06-pointers_arrays_strings
+
+cp 0-strcat.c 1-strncat.c 2-strncpy.c 3-strcmp.c ../0x18-dynamic_libraries
+
+cd ../0x07-pointers_arrays_strings
+
+cp 0-memset.c 1-memcpy.c 2-strchr.c 3-strspn.c 4-strpbrk.c 5-strstr.c ../0x18-dynamic_libraries
