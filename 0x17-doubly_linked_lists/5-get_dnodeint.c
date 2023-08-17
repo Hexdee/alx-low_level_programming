@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * get_dnode_at_index - returns the nth node of a dlistint_t linked list.
+ * get_dnode_at_index - returns the nth node of a dlistint_t linked list
  * @head: the doubly linked list
  * @index: position of element to get
  * Return: pointer to element at index n

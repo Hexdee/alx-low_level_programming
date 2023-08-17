@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * print_dlistint - prints all the elements of a dlistint_t list.
+ * print_dlistint - prints all the elements of a dlistint_t list
  * @h: doubly linked liat head
  * Return: number of node
  */
